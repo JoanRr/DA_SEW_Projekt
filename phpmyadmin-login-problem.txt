@@ -5,7 +5,6 @@
 - Connection method for MySQL database server for phpmyadmin: TCP/IP
 
 - Host name of the MySQL database server for phpmyadmin: localhost
-
 - Port number for the MySQL service: 3306
 
 - MySQL database name for phpmyadmin: phpmyadmin <Ok>
