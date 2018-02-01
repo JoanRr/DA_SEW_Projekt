@@ -1,0 +1,26 @@
+- sudo dpkg-reconfigure phpmyadmin <Ok>
+
+- Reinstall database for phpmyadmin: <Yes>
+
+- Connection method for MySQL database server for phpmyadmin: TCP/IP
+
+- Host name of the MySQL database server for phpmyadmin: localhost
+
+- Port number for the MySQL service: 3306
+
+- MySQL database name for phpmyadmin: phpmyadmin <Ok>
+
+- MySQL username for phpmyadmin: root
+
+- MySQL application password for phpmyadmin: pass  # OR ANY PASSWORD YOU WANT
+
+- Password confirmation: smartvehicle
+
+- Name of the database's administrative user: root
+
+- Web server to reconfigure automatically: apache2
+
+- An error occurred while installing the database: ignore
+
+username: root
+password: smart vehicle
