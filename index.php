@@ -6,20 +6,10 @@
 	</head>
 	<body>
 	<form action ="" method="post" name="form1">
-        <input type = "submit" value="Bild aufnehmen" onclick="calA();"/>
-        <input type = "submit" value="Video aufnehmen" onclick="calB();"/>
 	<input type = "submit" value="Motor Control" onclick="calC();"/>
 	</form>
 
         <script type = "text/javascript">
-        function calA()
-        {
-        document.form1.action = "PicButton.php";
-        }
-	function calB()
-        {
-        document.form1.action = "VidButton.php";
-        }
 	function calC()
         {
         document.form1.action = "MotButton.php";
