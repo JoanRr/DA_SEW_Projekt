@@ -7,15 +7,6 @@
 	
 	</head>
 	<body>
-
-        <script type = "text/javascript">
-	function calC()
-        {
-        document.form1.action = "MotButton.php";
-        }
-        </script>
-
-	<a href="/dhtsensor/MotButton.php/">Take Photo</a>
 	
 	<div id="show"></div>
 	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
