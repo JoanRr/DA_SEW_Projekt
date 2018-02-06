@@ -27,7 +27,7 @@ try:
    print "Writing to database..."
    c.execute(*sql)
    db.commit()
-   print "Write Completw"
+   print "Write Complete"
 except:
     b.rollback()
     print "failed"
