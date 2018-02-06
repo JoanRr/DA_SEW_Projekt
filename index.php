@@ -7,9 +7,6 @@
 	
 	</head>
 	<body>
-	<form action ="" method="post" name="form1">
-	<input type = "submit" value="Motor Control" onclick="calC();"/>
-	</form>
 
         <script type = "text/javascript">
 	function calC()
