@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<meta charset="utf-8">
+	<meta charset="utf-8">
                 <meta http="X-UA-Compatible" content="IE=edge">
 		<title>Kamera</title>
 	</head>
