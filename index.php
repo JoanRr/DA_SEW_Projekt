@@ -2,7 +2,9 @@
 	<head>
 	<meta charset="utf-8">
         <meta http="X-UA-Compatible" content="IE=edge">
-		<title>Kamera</title>
+	
+	<title>DA_SEW_Projekt</title>
+	
 	</head>
 	<body>
 	<form action ="" method="post" name="form1">
@@ -17,8 +19,6 @@
         </script>
 
 	<a href="/dhtsensor/MotButton.php/">Take Photo</a>
-
-	<br><iframe src="http://192.168.0.198:9000/?action=stream"></iframe>
 	
 	<div id="show"></div>
 	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
