@@ -10,13 +10,15 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
+# Select Statement
 $sql = "SELECT ID_t, temperature, humidity FROM tempLog ORDER BY ID_t desc";
+
+#Delete Statement
 $sql2 = "DELETE FROM tempLog WHERE ID_t NOT IN ( SELECT ID_t FROM ( SELECT ID_t FROM tempLog ORDER BY ID_t DESC LIMIT 3 ) o )";
 $result = $conn->query($sql);
 $result2 = $conn->query($sql2);
 
-
+# Die Werte mit dem hochsten ID selektieren
 if ($result->num_rows > 0) {
     // output data of each row
     if($row = $result->fetch_assoc()) {
