@@ -1,9 +1,9 @@
-import RPi.GPIO as GPIO
-import time
+import RPi.GPIO as GPIO				# GPIO Library importieren
+import time					# Zeit Library importieren
 
-DHTPIN = 17
+DHTPIN = 17					# GPIO fuer die Data-Uebertragung waehlen
 
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BCM)				# Pins wurden als GPIO deklariert
 
 MAX_UNCHANGE_COUNT = 100
 
@@ -21,6 +21,7 @@ def read_dht11_dat():                           #Dieses Funktion liest die Daten
     time.sleep(0.02)
     GPIO.setup(DHTPIN, GPIO.IN, GPIO.PUD_UP)
 
+#40 Bits wurde Bit fuer Bit ueberprueft.
     unchanged_count = 0
     last = -1
     data = []
@@ -103,7 +104,7 @@ def read_dht11_dat():                           #Dieses Funktion liest die Daten
 	return False
 
     return the_bytes[0], the_bytes[2]
-
+#Es wurden zwei Werte auf die Schnittstelle angezeigt bzw. Die Temperatur und Feuchtigkei.
 def main():
 	#print "Raspberry Pi wiringPi DHT11 Temperature test program\n"
 	#while True:
@@ -113,7 +114,7 @@ def main():
 	print "humidity: %s %%,  Temperature: %s C`" % (humidity, temperature)
 		#time.sleep(1)
 	return humidity, temperature
-
+#Am Ende des Programmes wurde das Skript beendet und der GIOP auf seine erste Zustand gewechselt.
 def destroy():
 	GPIO.cleanup()
 
